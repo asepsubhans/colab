@@ -1,0 +1,20 @@
+#HOSTNAME
+!hostname -I
+
+#CHECKIP
+!curl ipecho.net/plain
+
+#DOWNLOAD
+!wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.48/lolMiner_v1.48_Lin64.tar.gz
+
+#EKSTRAK
+!tar -xvf lolMiner_v1.48_Lin64.tar.gz
+
+#PANGGIL
+%cd 1.48
+
+#CLEAR
+!clear
+
+#MINING
+!./lolMiner --algo ETHASH --pool eth.2miners.com:2020 --user nano_3upqe8jc3cf9ku53kmcn7uwzaf5b3hizfbdqxbh4nqoqzf1ypkxfoot41yrg.RIG1 --ethstratum ETHPROXY
